@@ -1,0 +1,23 @@
+DataBASE specification
+
+create database crudDatabase;
+
+use crudDatabase;
+
+create table user (id int auto_increment not null, username varchar(10), password varchar(10), primary key(id));
+
+insert into user(username,password) values("admin","admin");
+
+select * from  user;
+
+CREATE TABLE SALES (
+    ID int NOT NULL Auto_Increment,
+    ITEM VARCHAR(50) NOT NULL ,
+    QUANTITY Integer NOT NULL ,
+    AMOUNT FLOAT NOT NULL,
+	PRIMARY KEY (id)
+);
+
+desc sales;
+
+select * from sales;
